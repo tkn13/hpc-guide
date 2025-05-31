@@ -28,10 +28,25 @@ Since our cluster requires a network for internal communication, we will create 
   <network>
     <name>hostonly-net</name>
     <bridge name='virbr10' stp='on' delay='0'/>
+    <forward mode="nat">
     <ip address='192.168.100.1' netmask='255.255.255.0'>
       <dhcp>
         <range start='192.168.100.2' end='192.168.100.254'/>
       </dhcp>
     </ip>
   </network>
+  ```
+  2. Define network
+  ```bash
+  virsh net-define ./private-net.xml
+  ```
+  3. After define it you can check if the network have been define sucessfully 
+  ```bash
+  virsh net-list --all
+  ```
+  the output will show network name that define in xml file in this case it "hostonly-net"
+  4. Start network
+  ```bash
+  virsh net-start hostonly-net
+  virsh net-autostart hostonly-net
   ```
