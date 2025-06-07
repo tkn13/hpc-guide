@@ -6,12 +6,12 @@ write by Thaksin Chiakon
 This section will how to build virtual machine for simulate building cluster if you have real computers, skip this section
 
 ### KVM
-####1. Virtual Disk setup
+#### 1. Virtual Disk setup
 This command is for create own disk for your VM.
  ```bash
  qemu-img create -f <format> <disk_name> <size> 
  ```
-#####Example
+##### Example
   ```bash
   mkdir disk
   cd disk
@@ -19,7 +19,7 @@ This command is for create own disk for your VM.
   ```
  <mark>qcow2</mark>  is a storage format for virtual disks
 
-####2. Virtual Network setup
+#### 2. Virtual Network setup
 Since our cluster requires a network for internal communication, we will create a virtual private network using <mark>virsh</mark>.
 
   1. Create a Network XML File
