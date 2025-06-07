@@ -6,9 +6,9 @@ _Written by Thaksin Chiakon_
 
 ## Table of content
 
-[1. Project set up](https://github.com/tkn13/hpc-guide/edit/main/README.md#%EF%B8%8F-project-setup)
+[1. Project set up](https://github.com/tkn13/hpc-guide?tab=readme-ov-file#%EF%B8%8F-project-setup)
 
-[2. VM set up](https://github.com/tkn13/hpc-guide/edit/main/README.md#%EF%B8%8F-project-setup)
+[2. VM set up](https://github.com/tkn13/hpc-guide?tab=readme-ov-file#-vm-set-up)
 
 
 ## 🛠️ Project Setup
